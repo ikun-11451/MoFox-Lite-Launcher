@@ -8,7 +8,7 @@ if exist "%~dp0MoFox-Core" (
         echo 正在克隆MoFox-Core-Webui仓库...
         git clone -b webui-dist https://github.com/MoFox-Studio/MoFox-Core-Webui.git webui_backend
         if %errorlevel% == 0 (
-            echo MoFox-Core-Webui仓库克隆成功。
+            echo MoFox-Core-Webui仓库克隆成功，在你的MoFox-Core\config\bot_config.toml中配置plugin_api_valid_keys以设置WebUI密码。
         ) else (
             echo git clone失败，请检查网络连接或git配置。
         )
